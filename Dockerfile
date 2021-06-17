@@ -4,7 +4,7 @@
 # ----------------------------------
 FROM    quay.io/parkervcp/pterodactyl-images:base_ubuntu
 
-LABEL   author="Dex's Lab" maintainer="dex35803@gmail.com"
+LABEL   author="VirtualBrightPlayz" maintainer="virtualbrightplayz@gmail.com"
 
 ENV     DEBIAN_FRONTEND noninteractive
 
