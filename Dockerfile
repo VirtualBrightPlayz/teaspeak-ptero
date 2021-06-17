@@ -13,7 +13,9 @@ RUN     apt update -y \
         && wget https://packages.microsoft.com/config/debian/10/packages-microsoft-prod.deb -O packages-microsoft-prod.deb \
         && dpkg -i packages-microsoft-prod.deb \
         && apt update -y \
-        && apt install -y dotnet-sdk-5.0 aspnetcore-runtime-5.0 dotnet-sdk-2.1 dotnet-sdk-3.1 libgdiplus ffmpeg libleptonica-dev libtesseract-dev tesseract-ocr automake ca-certificates g++ git libtool libleptonica-dev make pkg-config
+        && apt install -y dotnet-sdk-5.0 aspnetcore-runtime-5.0 dotnet-sdk-2.1 dotnet-sdk-3.1 libgdiplus ffmpeg libleptonica-dev libtesseract-dev tesseract-ocr automake ca-certificates g++ git libtool libleptonica-dev make pkg-config python \
+        && wget https://yt-dl.org/downloads/latest/youtube-dl /home/container/youtube-dl \
+        && chmod a+x /home/container/youtube-dl
 
 
 USER    container
